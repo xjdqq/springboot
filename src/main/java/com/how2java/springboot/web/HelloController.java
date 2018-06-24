@@ -19,6 +19,7 @@ userMapper userMapper;
     @RequestMapping("/hello")
     public String hello(Model m){
         System.out.println("yesgithub");
+        int c=1/0;
         int b=1/0;
         int a=1/0;
         user user=userMapper.selectOne("1");
