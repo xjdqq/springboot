@@ -18,6 +18,7 @@ public class HelloController {
 userMapper userMapper;
     @RequestMapping("/hello")
     public String hello(Model m){
+        System.out.println("yesgithub");
         int a=1/0;
         user user=userMapper.selectOne("1");
         m.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
