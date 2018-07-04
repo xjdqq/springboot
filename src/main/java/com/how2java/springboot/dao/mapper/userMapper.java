@@ -7,6 +7,6 @@ import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface userMapper {
-    @Select("select id as id,name as name,login_name as loginName ,password as password,sex as sex,is_open as isOpen from users where id=#{id}")
-    user selectOne(@Param("id") String id);
+//    @Select("select id as id,name as name,password as password,sex as sex,is_open as isOpen from users where id=#{id}")
+//    user selectOne(@Param("id") String id);
 }

@@ -1,6 +1,5 @@
 package com.how2java.springboot.web;
 
-import com.gzkit.httpUtils.HttpRequestUtils;
 import com.how2java.springboot.biz.shiro.UsersAuthBiz;
 import com.how2java.springboot.constant.Constant;
 import com.how2java.springboot.dao.bean.user;
@@ -18,15 +17,15 @@ import java.util.Date;
 
 @Controller
 public class HelloController {
-@Autowired
-userMapper userMapper;
-@Autowired
+    @Autowired
+    userMapper userMapper;
+    @Autowired
     UsersAuthBiz usersAuthBiz;
     @RequestMapping(value = "/hello.html")
     public String hello(Model m){
         System.out.println("yesgithub");
         usersAuthBiz.a();
-        user user=userMapper.selectOne("1");
+        //user user=userMapper.selectOne("1");
         m.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
 
         return "login";
