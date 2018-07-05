@@ -54,7 +54,10 @@ public class ShiroConfiguration {
         filterChainDefinitionMap.put("/logout", "logout");
         filterChainDefinitionMap.put("/login.html", "anon");
         filterChainDefinitionMap.put("/helloYang", "anon");
+        //thymeleaf测试
         filterChainDefinitionMap.put("/helloTh", "anon");
+        //redis测试
+        filterChainDefinitionMap.put("/testRedis","anon");
         // 防止登录成功之后下载favicon.ico
         filterChainDefinitionMap.put("/favicon.ico", "anon");
         filterChainDefinitionMap.put("/static/**", "anon");
